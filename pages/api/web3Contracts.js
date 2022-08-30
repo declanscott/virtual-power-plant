@@ -47,9 +47,9 @@ class web3Contracts {
   }
 
   async initContractTruffle() {
-    const VirtualPowerPlant = require("../../build/contracts/VirtualPowerPlant.json");
-    const BatteryEnergy = require("../../build/contracts/BatteryEnergy.json");
-    const BatteryInvestment = require("../../build/contracts/BatteryInvestment.json");
+    const VirtualPowerPlant = require("../../contracts/VirtualPowerPlant.sol");
+    const BatteryEnergy = require("../../contracts/BatteryEnergy.sol");
+    const BatteryInvestment = require("../../contracts/BatteryInvestment.sol");
 
     this.contracts.VirtualPowerPlant = {
       contract: contract(VirtualPowerPlant),
